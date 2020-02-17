@@ -23,4 +23,4 @@ var t = setTimeout(function () {
 for (var i = 0; i < elements.length; i++) {
     elements[i].classList.add("prey-fade");
 }
-}, 1500);
+}, 500);
