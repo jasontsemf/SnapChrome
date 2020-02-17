@@ -1,0 +1,22 @@
+{
+    "manifest_version": 2,
+    "name": "Snap",
+    "version": "1.0.0",
+
+    "browser_action": {
+        "default_title": "Hello, World!"
+    },
+
+    "permissions": [
+        "activeTab"
+    ],
+
+    "content_security_policy": "script-src 'self' https://ajax.googleapis.com; object-src 'self'",
+
+    "content_scripts": [{
+        "matches": ["https://www.google.com/search?*"],
+        "js": ["content.js"],
+        "css": ["content.css"],
+        "persistent": false
+    }]
+}
